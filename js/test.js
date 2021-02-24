@@ -1474,3 +1474,660 @@
 // console.log(mango.blacklistedEmails); // 'poly@mail.com'
 // console.log(mango.isBlacklisted('mango@mail.com')); //  false
 // console.log(mango.isBlacklisted('poly@mail.com')); // true 
+
+// function calculateTotalPrice(orderedItems) {
+//     let totalPrice = 0;
+  
+//   orderedItems.forEach(item => totalPrice += item);
+//   //or
+//   orderedItems.forEach(function (item) {
+//       totalPrice += item
+//     });
+  
+//     return totalPrice;
+//   }
+
+// function filterArray(numbers, value) {
+//     const filteredNumbers = [];
+//   numbers.forEach(function (number){
+//     if (number > value){
+//       filteredNumbers.push(number)
+//     }
+//   })
+  
+// function getCommonElements(firstArray, secondArray) {
+//     const commonElements = [];
+//   firstArray.forEach(function (item) {
+//   	if (secondArray.includes(item)) {
+//      commonElements.push(item);
+//     }
+//   })
+  
+//     return commonElements;
+//   }
+
+// Пиши код ниже этой строки
+
+// // function calculateTotalPrice(quantity, pricePerItem) {
+//      const calculateTotalPrice = (quantity, pricePerItem) => {
+    
+//       // Пиши код выше этой строки
+//       return quantity * pricePerItem;
+//     }
+// const calculateTotalPrice = (orderedItems) => {
+//     let totalPrice = 0;
+  
+//     orderedItems.forEach(item => {
+//       totalPrice += item;
+//     });
+  
+//     return totalPrice;
+//   }
+
+// const filterArray = (numbers, value) => {
+//     const filteredNumbers = [];
+  
+//     numbers.forEach(number => {
+//       if (number > value) {
+//         filteredNumbers.push(number);
+//       }
+//     });
+  
+//     return filteredNumbers;
+//   }
+
+// const changeEven = (numbers, value) => {
+//     const newArray = [];
+
+//     numbers.forEach(number => {
+//         if (number % 2 !== 0) {
+//              newArray.push(number);
+//         } else {
+//         newArray.push(number + value)
+//         }
+//     })
+
+//     return newArray
+
+//   }
+//  console.log(changeEven([1, 2, 3, 4, 5], 10));
+  
+// const planets = ['Земля', 'Марс', 'Венера', 'Юпитер'];
+// const planetsLengths = planets.map(planet => planet.length);
+
+// console.log(planetsLengths);
+
+// const books = [
+//     { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
+//     { title: 'На берегу спокойных вод', author: 'Роберт Шекли', rating: 8.51 },
+//     { title: 'Сон смешного человека', author: 'Федор Достоевский', rating: 7.75 },
+//     { title: 'Красна как кровь', author: 'Ли Танит', rating: 7.94 },
+//     { title: 'Враг Божий', author: 'Бернард Корнуэлл', rating: 8.67 }
+//   ];
+  
+//   const titles = books.map(book => book.title);
+//   console.log(titles);
+
+//   const books = [
+//     {
+//       title: 'Последнее королевство',
+//       author: 'Бернард Корнуэлл',
+//       genres: ['приключения', 'историческое']
+//     },
+//     {
+//       title: 'На берегу спокойных вод',
+//       author: 'Роберт Шекли',
+//       genres: ['фантастика']
+//     },
+//     {
+//       title: 'Красна как кровь',
+//       author: 'Ли Танит',
+//       genres: ['ужасы', 'мистика']
+//     }
+//   ];
+  
+//   const genres = books.flatMap(book => book.genres);
+
+// const getUserNames = users => {
+//   const names = users.map(user => user.name);
+//   return names;
+//   };
+
+//   console.log(getUserNames([
+//         {
+//           name: 'Moore Hensley',
+        //   email: 'moorehensley@indexia.com',
+        //   eyeColor: 'blue',
+        //   friends: ['Sharron Pace'],
+        //   isActive: false,
+        //   balance: 2811,
+        //   skills: ['ipsum', 'lorem'],
+        //   gender: 'male',
+        //   age: 37,
+        // },
+        // {
+        //   name: 'Sharlene Bush',
+        //   email: 'sharlenebush@tubesys.com',
+        //   eyeColor: 'blue',
+        //   friends: ['Briana Decker', 'Sharron Pace'],
+        //   isActive: true,
+        //   balance: 3821,
+        //   skills: ['tempor', 'mollit', 'commodo', 'veniam', 'laborum'],
+        //   gender: 'female',
+        //   age: 34,
+        // },
+        // {
+        //   name: 'Ross Vazquez',
+        //   email: 'rossvazquez@xinware.com',
+        //   eyeColor: 'green',
+        //   friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
+        //   isActive: false,
+        //   balance: 3793,
+        //   skills: ['nulla', 'anim', 'proident', 'ipsum', 'elit'],
+        //   gender: 'male',
+        //   age: 24,
+        // },
+        // {
+        //   name: 'Elma Head',
+        //   email: 'elmahead@omatom.com',
+        //   eyeColor: 'green',
+        //   friends: ['Goldie Gentry', 'Aisha Tran'],
+        //   isActive: true,
+        //   balance: 2278,
+        //   skills: ['adipisicing', 'irure', 'velit'],
+        //   gender: 'female',
+        //   age: 21,
+        // },
+        // {
+        //   name: 'Carey Barr',
+        //   email: 'careybarr@nurali.com',
+        //   eyeColor: 'blue',
+        //   friends: ['Jordan Sampson', 'Eddie Strong'],
+        //   isActive: true,
+        //   balance: 3951,
+        //   skills: ['ex', 'culpa', 'nostrud'],
+        //   gender: 'male',
+        //   age: 27,
+        // },
+        // {
+        //   name: 'Blackburn Dotson',
+        //   email: 'blackburndotson@furnigeer.com',
+        //   eyeColor: 'brown',
+        //   friends: ['Jacklyn Lucas', 'Linda Chapman'],
+        //   isActive: false,
+        //   balance: 1498,
+        //   skills: ['non', 'amet', 'ipsum'],
+        //   gender: 'male',
+        //   age: 38,
+        // },
+        // {
+        //   name: 'Sheree Anthony',
+        //   email: 'shereeanthony@kog.com',
+        //   eyeColor: 'brown',
+        //   friends: ['Goldie Gentry', 'Briana Decker'],
+        //   isActive: true,
+        //   balance: 2764,
+        //   skills: ['lorem', 'veniam', 'culpa'],
+        //   gender: 'female',
+        //   age: 39,
+        // }]));
+
+// const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
+
+// const evenNumbers = numbers.filter(number => number % 2 === 0);
+// const oddNumbers = numbers.filter(number => number % 2 !== 0);
+
+// console.log(evenNumbers);
+// console.log(oddNumbers);
+
+// const books = [
+//     {
+//       title: 'Последнее королевство',
+//       author: 'Бернард Корнуэлл',
+//       genres: ['приключения', 'историческое']
+//     },
+//     {
+//       title: 'На берегу спокойных вод',
+//       author: 'Роберт Шекли',
+//       genres: ['фантастика', 'мистика']
+//     },
+//     {
+//       title: 'Красна как кровь',
+//       author: 'Ли Танит',
+//       genres: ['ужасы', 'мистика', 'приключения']
+//     }
+//   ];
+//   const allGenres = books.flatMap(book => book.genres);
+//   const uniqueGenres = allGenres.filter((genre, index, array) => array.indexOf(genre) === index);
+
+//   console.log(allGenres);
+//   console.log(uniqueGenres);
+
+// const books = [
+//     { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
+//     { title: 'На берегу спокойных вод', author: 'Роберт Шекли', rating: 8.51 },
+//     { title: 'Сон смешного человека', author: 'Федор Достоевский', rating: 7.75 },
+//     { title: 'Красна как кровь', author: 'Ли Танит', rating: 7.94 },
+//     { title: 'Враг Божий', author: 'Бернард Корнуэлл', rating: 8.67 }
+//   ];
+  
+//   const MIN_RATING = 8;
+//   const AUTHOR = 'Бернард Корнуэлл';
+  
+//   const topRatedBooks = books.filter(({rating}) => rating >= MIN_RATING);
+// //or const topRatedBooks = books.filter(book => book.rating >= MIN_RATING);
+//   const booksByAuthor = books.filter(({author}) => author === AUTHOR);
+// //or   const booksByAuthor = books.filter(book => book.author === AUTHOR);
+
+// console.log(topRatedBooks);
+// console.log(booksByAuthor);
+
+
+// const users = [
+//     {
+//       name: 'Moore Hensley',
+//       email: 'moorehensley@indexia.com',
+//       eyeColor: 'blue',
+//       friends: ['Sharron Pace'],
+//       isActive: false,
+//       balance: 2811,
+//       gender: 'male'
+//     },
+//     {
+//       name: 'Sharlene Bush',
+//       email: 'sharlenebush@tubesys.com',
+//       eyeColor: 'blue',
+//       friends: ['Briana Decker', 'Sharron Pace'],
+//       isActive: true,
+//       balance: 3821,
+//       gender: 'female'
+//     },
+//     {
+//       name: 'Ross Vazquez',
+//       email: 'rossvazquez@xinware.com',
+//       eyeColor: 'green',
+//       friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
+//       isActive: false,
+//       balance: 3793,
+//       gender: 'male'
+//     },
+//     {
+//       name: 'Elma Head',
+//       email: 'elmahead@omatom.com',
+//       eyeColor: 'green',
+//       friends: ['Goldie Gentry', 'Aisha Tran'],
+//       isActive: true,
+//       balance: 2278,
+//       gender: 'female'
+//     },
+//     {
+//       name: 'Carey Barr',
+//       email: 'careybarr@nurali.com',
+//       eyeColor: 'blue',
+//       friends: ['Jordan Sampson', 'Eddie Strong'],
+//       isActive: true,
+//       balance: 3951,
+//       gender: 'male'
+//     },
+//     {
+//       name: 'Blackburn Dotson',
+//       email: 'blackburndotson@furnigeer.com',
+//       eyeColor: 'brown',
+//       friends: ['Jacklyn Lucas', 'Linda Chapman'],
+//       isActive: false,
+//       balance: 1498,
+//       gender: 'male'
+//     },
+//     {
+//       name: 'Sheree Anthony',
+//       email: 'shereeanthony@kog.com',
+//       eyeColor: 'brown',
+//       friends: ['Goldie Gentry', 'Briana Decker'],
+//       isActive: true,
+//       balance: 2764,
+//       gender: 'female'
+//     }
+//   ]
+
+//   const getUsersWithFriend = (users, friendName) => {
+//     return users.filter(user => user.friends.includes(friendName))
+//  };
+
+//  console.log(getUsersWithFriend(users, 'Goldie Gentry'));
+
+
+// const getUsersWithAge = (users, minAge, maxAge) => {
+//  return users.filter(({age}) => age >= minAge && age <= maxAge)
+
+// };
+
+// const getFriends = (users) => {
+//     const friends = users.flatMap(user => user.friends);
+//    return friends.filter((user, index, array) => array.indexOf(user) === index)
+//  };
+// const getInactiveUsers = (users) => {
+//     return users.filter(user => user.isActive === false)  
+//   };
+
+// const books = [
+//     { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
+//     { title: 'На берегу спокойных вод', author: 'Роберт Шекли', rating: 8.51 },
+//     { title: 'Сон смешного человека', author: 'Федор Достоевский', rating: 7.75 },
+//     { title: 'Красна как кровь', author: 'Ли Танит', rating: 7.94 },
+//   ];
+//   const BOOK_TITLE = 'Сон смешного человека';
+//   const AUTHOR = 'Роберт Шекли';
+//   // Пиши код ниже этой строки
+  
+//   const bookWithTitle = books.find(book => book.title === BOOK_TITLE);
+//   const bookByAuthor = books.find(book => book.author === AUTHOR);
+
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Пиши код ниже этой строки
+
+// const eachElementInFirstIsEven = firstArray.every(e => e % 2 === 0);
+// const eachElementInFirstIsOdd = firstArray.every(e => e % 2 !== 0);
+
+// const eachElementInSecondIsEven = secondArray.every(e => e % 2 === 0);
+// const eachElementInSecondIsOdd = secondArray.every(e => e % 2 !== 0);
+
+// const eachElementInThirdIsEven = thirdArray.every(e => e % 2 === 0);
+// const eachElementInThirdIsOdd = thirdArray.every(e => e % 2 !== 0);
+
+// const isEveryUserActive = (users) => {
+//     return users.every(user => user.isActive === true)
+//  };
+
+// const players = {
+//     mango: 1270,
+//     poly: 468,
+//     ajax: 710,
+//     kiwi: 244
+//   };
+//   const playtimes = Object.values(players); // [1270, 468, 710, 244]
+  
+//   const totalPlayTime = playtimes.reduce((previousValue, number) => {return previousValue + number}, 0);
+  
+//   const averagePlayTime = totalPlayTime / playtimes.length;
+
+// const players = [
+//     { name: 'Манго', playtime: 1270, gamesPlayed: 4 },
+//     { name: 'Поли', playtime: 469, gamesPlayed: 2 },
+//     { name: 'Аякс', playtime: 690, gamesPlayed: 3 },
+//     { name: 'Киви', playtime: 241, gamesPlayed: 1 },
+//   ];
+        
+//   const totalAveragePlaytimePerGame = players.reduce((total, player) => {
+//       return total + (player.playtime / player.gamesPlayed)
+//   }, 0);
+//   ;
+  
+// console.log(totalAveragePlaytimePerGame);
+
+// const users = [
+//     {
+//       name: 'Moore Hensley',
+//       email: 'moorehensley@indexia.com',
+//       eyeColor: 'blue',
+//       friends: ['Sharron Pace'],
+//       isActive: false,
+//       balance: 2811,
+//       gender: 'male'
+//     },
+//     {
+//       name: 'Sharlene Bush',
+//       email: 'sharlenebush@tubesys.com',
+//       eyeColor: 'blue',
+//       friends: ['Briana Decker', 'Sharron Pace'],
+//       isActive: true,
+//       balance: 3821,
+//       gender: 'female'
+//     },
+//     {
+//       name: 'Ross Vazquez',
+//       email: 'rossvazquez@xinware.com',
+//       eyeColor: 'green',
+//       friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
+//       isActive: false,
+//       balance: 3793,
+//       gender: 'male'
+//     },
+//     {
+//       name: 'Elma Head',
+//       email: 'elmahead@omatom.com',
+//       eyeColor: 'green',
+//       friends: ['Goldie Gentry', 'Aisha Tran'],
+//       isActive: true,
+//       balance: 2278,
+//       gender: 'female'
+//     },
+//     {
+//       name: 'Carey Barr',
+//       email: 'careybarr@nurali.com',
+//       eyeColor: 'blue',
+//       friends: ['Jordan Sampson', 'Eddie Strong'],
+//       isActive: true,
+//       balance: 3951,
+//       gender: 'male'
+//     },
+//     {
+//       name: 'Blackburn Dotson',
+//       email: 'blackburndotson@furnigeer.com',
+//       eyeColor: 'brown',
+//       friends: ['Jacklyn Lucas', 'Linda Chapman'],
+//       isActive: false,
+//       balance: 1498,
+//       gender: 'male'
+//     },
+//     {
+//       name: 'Sheree Anthony',
+//       email: 'shereeanthony@kog.com',
+//       eyeColor: 'brown',
+//       friends: ['Goldie Gentry', 'Briana Decker'],
+//       isActive: true,
+//       balance: 2764,
+//       gender: 'female'
+//     }
+//   ];
+
+// const calculateTotalBalance = users => {
+//     return users.reduce((total, user) => {
+//         return total + user.balance
+//     }, 0) 
+//   };
+
+// const getTotalFriendCount = users => {
+//     return users.reduce((total, user) => {
+//         return total + user.friends.length
+//     }, 0) 
+//   };
+
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const authors = [
+//   'Ли Танит',
+//   'Бернард Корнуэлл',
+//   'Роберт Шекли',
+//   'Федор Достоевский'
+// ];
+
+// const ascendingReleaseDates = [...releaseDates].sort();
+
+// const alphabeticalAuthors = [...authors].sort();
+// console.log(alphabeticalAuthors);
+// console.log(ascendingReleaseDates);
+
+
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+
+// const ascendingReleaseDates = [...releaseDates].sort();
+// // or const ascendingReleaseDates = [...releaseDates].sort((a, b) => a - b);
+
+// const descendingReleaseDates = [...releaseDates].sort((a, b) => b - a);
+
+// const authors = [
+//     'Ли Танит',
+//     'Бернард Корнуэлл',
+//     'Роберт Шекли',
+//     'Федор Достоевский',
+//     'Говард Лавкрафт'
+//   ];
+// //   'a'.localeCompare('b'); // -1
+// //   'b'.localeCompare('a'); // 1
+// //   'a'.localeCompare('a'); // 0
+// //   'b'.localeCompare('b'); // 0  
+//   const authorsInAlphabetOrder = [...authors].sort((a, b) => a.localeCompare(b));
+  
+//   const authorsInReversedOrder = [...authors].sort((a, b) => b.localeCompare(a));
+
+
+// const books = [
+//     { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
+//     { title: 'На берегу спокойных вод', author: 'Роберт Шекли', rating: 8.51 },
+//     { title: 'Сон смешного человека', author: 'Федор Достоевский', rating: 7.75 },
+//     { title: 'Красна как кровь', author: 'Ли Танит', rating: 7.94 },
+//     { title: 'Враг Божий', author: 'Бернард Корнуэлл', rating: 8.67 }
+//   ];
+//   const sortedByAuthorName = [...books].sort((firstBook, secondBook) => firstBook.author.localeCompare(secondBook.author));
+    
+//     const sortedByReversedAuthorName = [...books].sort((firstBook, secondBook) => secondBook.author.localeCompare(firstBook.author));
+    
+//     const sortedByAscendingRating = [...books].sort((firstBook, secondBook) => firstBook.rating - secondBook.rating);
+    
+//     const sortedByDescentingRating = [...books].sort((firstBook, secondBook) => secondBook.rating - firstBook.rating);
+
+
+//   const students = [
+//     { name: 'Манго', score: 83 },
+//     { name: 'Поли', score: 59 },
+//     { name: 'Аякс', score: 37 },
+//     { name: 'Киви', score: 94 },
+//   ];
+  
+//   const inAscendingScoreOrder = students.sort(
+//     (firstStudent, secondStudent) => firstStudent.score - secondStudent.score
+//   );
+  
+//   const inDescendingScoreOrder = students.sort(
+//     (firstStudent, secondStudent) => secondStudent.score - firstStudent.score
+//   );
+  
+//   const inAlphabeticalOrder = students.sort((firstStudent, secondStudent) =>
+//     firstStudent.name.localeCompare(secondStudent.name)
+//   );
+
+//   console.log(inAlphabeticalOrder);
+// const users = [
+//     {
+//       name: 'Moore Hensley',
+//       email: 'moorehensley@indexia.com',
+//       eyeColor: 'blue',
+//       friends: ['Sharron Pace'],
+//       isActive: false,
+//       balance: 2811,
+//       gender: 'male'
+//     },
+//     {
+//       name: 'Sharlene Bush',
+//       email: 'sharlenebush@tubesys.com',
+//       eyeColor: 'blue',
+//       friends: ['Briana Decker', 'Sharron Pace'],
+//       isActive: true,
+//       balance: 3821,
+//       gender: 'female'
+//     },
+//     {
+//       name: 'Ross Vazquez',
+//       email: 'rossvazquez@xinware.com',
+//       eyeColor: 'green',
+//       friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
+//       isActive: false,
+//       balance: 3793,
+//       gender: 'male'
+//     },
+//     {
+//       name: 'Elma Head',
+//       email: 'elmahead@omatom.com',
+//       eyeColor: 'green',
+//       friends: ['Goldie Gentry', 'Aisha Tran'],
+//       isActive: true,
+//       balance: 2278,
+//       gender: 'female'
+//     },
+//     {
+//       name: 'Carey Barr',
+//       email: 'careybarr@nurali.com',
+//       eyeColor: 'blue',
+//       friends: ['Jordan Sampson', 'Eddie Strong'],
+//       isActive: true,
+//       balance: 3951,
+//       gender: 'male'
+//     },
+//     {
+//       name: 'Blackburn Dotson',
+//       email: 'blackburndotson@furnigeer.com',
+//       eyeColor: 'brown',
+//       friends: ['Jacklyn Lucas', 'Linda Chapman'],
+//       isActive: false,
+//       balance: 1498,
+//       gender: 'male'
+//     },
+//     {
+//       name: 'Sheree Anthony',
+//       email: 'shereeanthony@kog.com',
+//       eyeColor: 'brown',
+//       friends: ['Goldie Gentry', 'Briana Decker'],
+//       isActive: true,
+//       balance: 2764,
+//       gender: 'female'
+//     }
+//   ]
+// const sortByAscendingBalance = users => {
+//     return [...users].sort((firstUser, secondUser) => firstUser.balance - secondUser.balance) 
+//   };
+
+// const sortByDescendingFriendCount = users => {
+//     return [...users].sort((fU, sU) => sU.friends.length - fU.friends.length) 
+//   };
+
+// const sortByName = users => {
+//     return [...users].sort((fU, sU) => fU.name.localeCompare(sU.name)) 
+//   };
+
+// const getNamesSortedByFriendCount = users => {
+//     return [...users]
+//     .sort((a, b) => a.friends.length - b.friends.length)
+//     .map(user => user.name)
+//   };
+
+// const getSortedFriends = users => {
+//     return [...users]
+//     .flatMap(user => user.friends)
+//     .filter((user, index, array) => array.indexOf(user) === index)
+//     .sort((fristFriend, secondFriend) => fristFriend.localeCompare(secondFriend))
+//   };
+
+// const getTotalBalanceByGender = (users, gender) => {
+//     return [...users]
+//     .filter(user => user.gender === gender)
+//     .reduce((total, user) => {
+//         return total + user.balance
+//     }, 0)
+//   };
+
+// const books = [
+//     { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
+//     { title: 'На берегу спокойных вод', author: 'Роберт Шекли', rating: 8.51 },
+//     { title: 'Сон смешного человека', author: 'Федор Достоевский', rating: 7.75 },
+//     { title: 'Красна как кровь', author: 'Ли Танит', rating: 8.14 },
+//     { title: 'Сны В Ведьмином Доме', author: 'Говард Лавкрафт', rating: 8.67 }
+//   ];
+//   const MIN_BOOK_RATING = 8;
+//   // Пиши код ниже этой строки
+  
+//   const names = [...books]
+//   .filter(book => book.rating > MIN_BOOK_RATING)
+//   .map(book => book.author)
+//   .sort((a, b) => a.localeCompare(b));
+  
